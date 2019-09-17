@@ -1,7 +1,7 @@
 {
-  "name": "parcel-test",
+  "name": "blueprint-template",
   "version": "1.0.0",
-  "description": "Parcel test",
+  "description": "Blueprint Template",
   "main": "index.js",
   "scripts": {
     "start": "parcel index.html",
