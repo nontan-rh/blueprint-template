@@ -4,8 +4,9 @@
   "description": "Blueprint Template",
   "main": "index.js",
   "scripts": {
-    "start": "parcel index.html",
-    "lint": "eslint components/*.tsx *.ts",
+    "start": "parcel src/index.html",
+    "lint": "eslint src/components/*.tsx src/*.ts",
+    "prettier": "prettier --write src/components/*.tsx src/*.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -13,6 +14,8 @@
   "devDependencies": {
     "@types/react": "^16.9.2",
     "@types/react-dom": "^16.9.0",
+    "@types/react-redux": "^7.1.2",
+    "@types/redux-actions": "^2.6.1",
     "@typescript-eslint/eslint-plugin": "^2.3.0",
     "@typescript-eslint/parser": "^2.3.0",
     "eslint": "^6.4.0",
@@ -23,6 +26,7 @@
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-react": "^7.14.3",
     "parcel": "^1.12.3",
+    "prettier": "^1.18.2",
     "typescript": "^3.6.3"
   },
   "dependencies": {
@@ -30,6 +34,7 @@
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-redux": "^7.1.1",
-    "redux": "^4.0.4"
+    "redux": "^4.0.4",
+    "redux-actions": "^2.6.5"
   }
 }
