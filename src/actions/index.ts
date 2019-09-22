@@ -1,7 +1,4 @@
-import {createAction} from 'redux-actions';
+import { createAction } from 'redux-actions';
+import { INCREMENT } from '../constants/ActionTypes';
 
-import {INCREMENT} from '../constants/ActionTypes';
-
-export const increment = createAction<void>(
-    INCREMENT,
-);
+export const increment = createAction<void>(INCREMENT);

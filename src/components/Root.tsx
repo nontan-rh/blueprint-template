@@ -1,13 +1,12 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 import { Dispatch } from 'redux';
-import { Button } from "@blueprintjs/core";
+import { Button } from '@blueprintjs/core';
+import { connect } from 'react-redux';
 import { State } from '../states';
-import { connect } from "react-redux";
-import { INCREMENT } from "../constants/ActionTypes";
-import { increment } from "../actions";
+import { increment } from '../actions';
 
 interface Props {
-  counter: number,
+  counter: number;
   dispatch: Dispatch;
 }
 
@@ -16,10 +15,6 @@ const mapStateToProps = (state: State) => ({
 });
 
 class Root extends Component<Props> {
-  constructor(props: Props) {
-    super(props);
-  }
-
   onClick = () => {
     const { dispatch } = this.props;
     dispatch(increment());
@@ -29,7 +24,7 @@ class Root extends Component<Props> {
     const { counter } = this.props;
     return (
       <Button
-        intent="success"
+        intent='success'
         text={`Hello world ${counter}`}
         onClick={this.onClick}
       />

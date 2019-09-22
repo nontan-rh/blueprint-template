@@ -1,7 +1,7 @@
 export type State = {
-  counter: number,
+  counter: number;
 };
 
-export const initialState = {
+export const initialState: State = {
   counter: 0,
 };
